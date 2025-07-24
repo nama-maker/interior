@@ -74,22 +74,61 @@ button {
     width:25px;
 }
 
-table th,td {
-    border:1px solid black;
-    padding:40px;
-    border-collapse: collapse;
-    padding-top: 30px;
-    padding-bottom:10px;
-    padding-left: 120px;
-    padding-right: 120px;
-}
- .container{
-    margin: auto;
-    width:50%;
-    border:1px solid black;
-    padding: 10px;
+ * {
+  box-sizing: border-box;
 }
 
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
 </style>
 </head>
 
@@ -177,37 +216,46 @@ alt="Gauri" height="400" width="450" >
 
 <section id="Package" class="section" >
 <b><p><center><h1 style font-size:30px ></style>Package's</center></b></h1></p>
-<table style="width:100px" align="center">
-    <tr>
-        <th><b>BASIC</b></th>
-        <td><b>PRO</b></td>
-    </tr>
-    <tr>
-        <td>floorplanning</td>
-        <td>floorplanning</td>
-    </tr>
-    <tr>
-        <td>10 Hours Support</td>
-        <td>10 Hours Support</td>
-    </tr>
-    <tr>
-        <td>20 % furniture Discount</td>
-        <td>25 % furniture Discount</td>
-    </tr>
-    <tr>
-       <td>Good Deals</td>
-       <td>Great Deals</td>
-    </tr>
-    <tr>
-        <td>$ 199</td>
-        <td>$ 249</td>
-    </tr>
-    <tr>
-        <td>Per Room</td>
-        <td>Per Room</td>
-    </tr>
-</table>
-</section><br><br>
+<h2 style="text-align:center">Responsive Pricing Tables</h2>
+<p style="text-align:center">Resize the browser window to see the effect.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 194 / Per Room</li>
+    <li>floorplanning</li>
+    <li>10 % furniture Discount</li>
+    <li>Good Deals</li>
+    <li>10 Hours Support</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey">$ 249 / Per Room</li>
+    <li>floorplanning</li>
+    <li>20 % furniture Discount</li>
+    <li>Great Deals</li>
+    <li>10 Hours Support</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 599 / Per Room</li>
+    <li>floorplanning</li>
+    <li>30 % furniture Discount</li>
+    <li>Best Deals</li>
+    <li>10 Hours Support</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+</section>
+
 
 <section id="Contact" class="section" >
     <b><p><center><h1 style font-size:30px ></style>Contact us</center></b></h1></p><br>
