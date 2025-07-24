@@ -44,34 +44,36 @@ button {
     left:200px;
 }
 
-.h1 {
-    font-size:4rem;
-    margin-right:0.1rem;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .Designer-container {
-    max-width:900px;
-    margin:0rem auto;
-    padding:0 3rem;
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(50px,1fr));
-    gap:0rem;
-}
-
-.info {
-    padding: 4rem;
-    text-align:center;
-}
-
-.name {
-    color:#0e0305;
-    margin-right: 0.5rem;
-    align:left;
-}
-
-.column {
-    float:bottom;
-    width:25px;
+  padding: 16px;
+  text-align: left;
 }
 
  * {
@@ -207,30 +209,31 @@ height="800" width="1050" align="center" alt="demo">
 <section id="Designer" class="section">
 <b><center><h1 style="color:rgb(175, 70, 128);">Interior Designer's</center></b></h1><br>
 </header>
+<div class="card-container">
+<div class="card">
+<img src="https://zakworldoffacades.com/wp-content/uploads/2019/10/manit-208-214.jpg" style="width:100%">
 <div class="Designer-container">
-<img src="https://zakworldoffacades.com/wp-content/uploads/2019/10/manit-208-214.jpg" alt="Manit"
-height="400" width="450" >
-<div class="info">
-<h2 class="name"> Manit Rastogi </h2>
+<h4><b>Manit Rastogi</b></h4> 
 <p>Founder-partner at Delhi-based company, Morphogenesis, Manit Rastogi is an expert at combining sound 
-   design with sustainability and creativity. His work has won several Indian and international design 
-   awards included being ranked as India’s top interior designer by several media houses.</p>
+ design with sustainability and creativity. His work has won several Indian and international design 
+ awards including being ranked as India’s top interior designer by several media houses.</p> 
 </div>
 </div>
 
-
+<div class="card">
+<img src="https://jdinstituteoffashiontechnology.com/wp-content/uploads/2022/10/Gauri-Khan-1024x1536.webp" style="width:100%" height="310">
 <div class="Designer-container">
-<img src="https://jdinstituteoffashiontechnology.com/wp-content/uploads/2022/10/Gauri-Khan-1024x1536.webp" 
-alt="Gauri" height="400" width="450" >
-<div class="info">
-<h2 class="name"> Gauri Khan </h2>
+<h4><b>Gauri Khan</b></h4> 
 <p>The world knows Gauri Khan as the wife of Bollywood superstar Shahrukh Khan. However, most 
-    people are unaware that Gauri Khan owns her own firm, Gauri Khan Designs. She has worked on 
-    the homes of many Bollywood stars, making her one of the top celebrity interior designers in 
-    India.</p>
+people are unaware that Gauri Khan owns her own firm, Gauri Khan Designs. She has worked on 
+the homes of many Bollywood stars, making her one of the top celebrity interior designers in 
+India.</p> 
+</div>
 </div>
 </div>
 </section>
+
+
 
 <section id="Package" class="section" >
 <b><p><center><h1 style font-size:30px ></style>Package's</center></b></h1></p>
